@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        <h1 style="text-align:center;">Edit My Profile</h1>
+    </head>
+    <body>
+        
+        <form>
+            <fieldset>
+                <!--Simple edits to profile data-->
+                <legend>Account</legend>
+                <label>Profile Picture</label>
+                <br>
+                <input type="file" value="upload" form="mainForm">
+                <br>
+                <label>Username</label>
+                <br>
+                <input type="text" minlength="4" maxlength="8" placeholder="Username" name="username" form="mainForm" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="pass" minlength="6" form="mainForm" required>
+                <br>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <!--Taking in url and email and mobile number-->
+                <legend>Contacts</legend>
+                <label>Facebook</label>
+                <input type="url" name="URL" form="mainForm">
+                <br>
+                <br>
+                <label>Email</label>
+                <input type="email" name="Email" value="" placeholder="email@gmail.com" form="mainForm" required>
+                <br>
+                <br>
+                <label>Mobile</label>
+                <input type="text" name="mob" form="mainForm" required>
+                <br>
+            </fieldset>
+        </form>
+        <!--Third form for the submit and reset button to join the first two forms together to one button-->
+        <form id="mainForm">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <br>
+        </form>
+        <br>
+        <!--Go back to profile page-->
+        <a href="Profile.html">
+            <button>Back</button>
+        </a>
+    </body>
+</html>
